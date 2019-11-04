@@ -11,7 +11,7 @@ export class AppComponent {
   constructor(public authService: AuthenticationService) { }
 
   search() {
-  	window.location.href = "https://www.google.co.in/search?q=Bhaskar+Rajoriya";
+  	// window.location.href = "https://www.google.co.in/search?q=Bhaskar+Rajoriya";
   }
 
 }
