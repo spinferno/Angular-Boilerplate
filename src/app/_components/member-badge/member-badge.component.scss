@@ -1,0 +1,42 @@
+.badge-container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+        
+    .badge-container__img {
+        height: 7rem;
+        border-radius:50%;
+    }
+
+    .badge-container__profile-information {
+        color: white;
+
+        img {
+            height: 1rem;
+        }
+
+        h1, h2, h3 {
+            display: inline;
+            white-space: nowrap;
+        }
+
+        h2, h3 {
+            &:first-of-type {
+                margin-right: 1.4rem;
+            }
+        }
+
+        h1 {
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+    }
+}

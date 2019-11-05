@@ -1,0 +1,16 @@
+.header__logo {
+    height: 2.4rem;
+}
+
+header {
+    background-image: url('./../../../assets/images/banner-bg.jpg');
+    background-position-y: center;
+
+    .header__navbar {
+        background-color: rgba(19, 41, 39, 0.8)
+    } 
+
+    .nav-item {
+        color: white;
+    }
+}

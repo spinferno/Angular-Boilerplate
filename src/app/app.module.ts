@@ -25,6 +25,8 @@ import { AppComponent } from './_components/app.component';
 import { LoginComponent, RegisterComponent, ForgotPasswordComponent, ResetPasswordComponent } from './_components/auth/index';
 import { NavigationComponent } from './_components/navigation/navigation.component';
 import { HomeComponent } from './_components/home/home.component';
+import { DashboardComponent } from './_components/dashboard/dashboard.component';
+import { MemberBadgeComponent } from './_components/member-badge/member-badge.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { HomeComponent } from './_components/home/home.component';
     ForgotPasswordComponent,
     ResetPasswordComponent,
     NavigationComponent,
-    HomeComponent
+    HomeComponent,
+    DashboardComponent,
+    MemberBadgeComponent
   ],
   imports: [
     BrowserModule,

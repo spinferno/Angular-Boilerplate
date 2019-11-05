@@ -9,20 +9,15 @@ $warn: mat-palette($mat-red);
 $theme: mat-light-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);
 
-@font-face {
-  font-family: myFirstFont;
-  src: url(./assets/font/avenir_light.otf);
-}
-
 * {
-  font-family: myFirstFont;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;;
 }
 
 html, body {
   margin: 0;
   padding:0;
   line-height: normal;
-  font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
