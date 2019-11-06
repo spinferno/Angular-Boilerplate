@@ -1,4 +1,7 @@
-<header>
+<!-- #region header -->
+<header class="mb-4">
+
+  <!-- #region TopNav -->
   <nav class="header__navbar navbar navbar-expand navbar-light topbar mb-4 static-top shadow p-0">
     <img src="./../../../assets/images/TT-logo.svg" class="header__logo mx-5 my-3" />
     <ul class="navbar-nav mr-auto list-unstyled text-small">
@@ -8,6 +11,7 @@
       <li class="nav-item p-2" href="#">Community</li>
     </ul>
   </nav>
+  <!-- #endregion -->
 
   <nav *ngIf="!authService.isLoggedIn()" 
     class="navbar navbar-light bg-light justify-content-between">
@@ -19,13 +23,177 @@
     </ul>
   </nav>
 
+  <!-- #region Identity -->
   <div class="identity-banner px-5 pt-4 pb-5">
     <app-member-badge></app-member-badge>
   </div>
+  <!-- #endregion -->
+
 </header>
+<!-- #endregion -->
 
 <div class="container-fluid">
-  dash goes here
+  <div class="row">
+
+    <div class="col-lg-9 no-gutters pr-lg-0">
+      <div class="container-fluid">
+        <div class="row">
+
+          <!-- #region Stats -->
+          <section class="col-sm-12 col-lg-6 mb-4 px-lg-0" id="stats-block">
+
+            <div class="container-fluid">
+              <div class="row px-md-0">
+
+                <div class="col-sm-12 col-md-6 mb-2 px-md-2">
+                  <div class="card shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="stat-container col mr-2 text-nowrap text-uppercase text-center font-weight-bold">
+                          <span class="stat-container__title">Lifetime Stat</span><br>
+                          <span class="stat-container__value">0000</span><br>                    
+                          <span class="stat-container__measurement-units">Measure</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 mb-2 px-md-2">
+                  <div class="card shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="stat-container col mr-2 text-nowrap text-uppercase text-center font-weight-bold">
+                          <span class="stat-container__title">Lifetime Stat</span><br>
+                          <span class="stat-container__value">0000</span><br>                    
+                          <span class="stat-container__measurement-units">Measure</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 mb-2 mb-md-0 px-md-2">
+                  <div class="card shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="stat-container col mr-2 text-nowrap text-uppercase text-center font-weight-bold">
+                          <span class="stat-container__title">Lifetime Stat</span><br>
+                          <span class="stat-container__value">0000</span><br>                    
+                          <span class="stat-container__measurement-units">Measure</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="col-sm-12 col-md-6 mb-2 mb-md-0 px-md-2">
+                  <div class="card shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="stat-container col mr-2 text-nowrap text-uppercase text-center font-weight-bold">
+                          <span class="stat-container__title">Lifetime Stat</span><br>
+                          <span class="stat-container__value">0000</span><br>                    
+                          <span class="stat-container__measurement-units">Measure</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            </section>
+          <!-- #endregion -->
+          
+          <!-- #region Badges -->
+          <div class="col-sm-12 col-lg-6 mb-4">
+            <div class="card shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <h2 class="text-uppercase font-weight-bold mb-3">Badges Won</h2>
+                    <div class="row d-flex justify-content-around">
+
+                      <div class="col-4 badge-container text-center">
+                        <img class="badge-container__img--won img-fluid mb-2" src="./../../../assets/images/placeholder-image.png" /><br>
+                        <span class="badge-container__label font-weight-bold text-nowrap">Best Score</span>
+                      </div>
+
+                      <div class="col-4 badge-container text-center">
+                        <img class="badge-container__img--won img-fluid mb-2" src="./../../../assets/images/placeholder-image.png" /><br>                 
+                        <span class="badge-container__label font-weight-bold text-nowrap">Explorer</span>
+                      </div>
+
+                      <div class="col-4 badge-container text-center">
+                        <img class="badge-container__img--won img-fluid mb-2" src="./../../../assets/images/placeholder-image.png" /><br>             
+                        <span class="badge-container__label font-weight-bold text-nowrap">Best in Class</span>
+                      </div>
+
+                    </div>                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #endregion -->
+          
+          <!-- #region Photos -->
+          <section class="col-sm-12 col-lg-6 mb-4 px-lg-2" id="photos-block">
+            <div class="card shadow h-100 py-2">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <h2 class="text-uppercase font-weight-bold">Photos</h2>
+
+                    <div 
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>          
+          </section>
+          <!-- #endregion -->
+
+          <!-- #region Networks -->          
+          <div class="col-sm-12 col-lg-6 mb-4">
+            <div class="card shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <h2 class="text-uppercase font-weight-bold">Network</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>     
+          </div>
+          <!-- #endregion -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- #region Sessions -->
+    <aside class="col-lg-3">
+      <div class="card shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <h2 class="text-uppercase font-weight-bold">Sessions</h2>
+                <button type="button" class="btn--watch btn btn-dark btn-block text-left">Watch Live Stream</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </aside>
+    <!-- #endregion -->
+
+  </div>
 </div>
 
 

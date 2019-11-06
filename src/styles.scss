@@ -9,6 +9,10 @@ $warn: mat-palette($mat-red);
 $theme: mat-light-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);
 
+
+$grey-pale: #eaeaea;
+
+
 * {
   font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;;
 }
@@ -77,4 +81,12 @@ p {
   vertical-align: middle;
   height: 16px;
   width: 22px;
+}
+
+.text-xs {
+  font-size: .7rem
+}
+
+.text-lg {
+  font-size: 1.2rem
 }

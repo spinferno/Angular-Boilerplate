@@ -14,3 +14,34 @@ header {
         color: white;
     }
 }
+
+.card {
+    h2 {
+        font-size: large;
+    }
+}
+
+// stats
+.stat-container__value {
+    font-size: xx-large;
+}
+
+.stat-container__measurement-units {
+    font-size: smaller;
+}
+
+// badges
+.badge-container {
+    max-width: 8rem;
+
+    .badge-container__img--won {
+        padding: 0.8rem;
+        background-color: #eaeaea;
+        border-radius: 50%;
+    }
+}
+
+// sessions
+.btn--watch {
+    background-color: #2c2c2c;
+}
