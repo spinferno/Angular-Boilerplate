@@ -26,6 +26,8 @@ export class AuthenticationService {
 
     login(email: string, password: string): Observable<any> {
         return this.http.post(this.apiUrl+'/auth/login', { username: email, password: password })
+
+        //return this.http.post('https://azapp-tektrak-mobileappservices-poc.azurewebsites.net/.auth/login/google?response_type=token&redirect_uri=http%3A%2F%2F127.0.0.1%3A5500%2Fo2c.html&realm=na&client_id=na&state=authClient&session_mode=token&post_login_redirect_url=http%3A%2F%2F127.0.0.1%3A5500%2Fo2c.html')
             .pipe(
                 map((response: Response) => {
                     // login successful if there's a jwt token in the response

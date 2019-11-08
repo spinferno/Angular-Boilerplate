@@ -34,14 +34,43 @@ header {
 .badge-container {
     max-width: 8rem;
 
-    .badge-container__img--won {
-        padding: 0.8rem;
-        background-color: #eaeaea;
+    .badge-container__img {
         border-radius: 50%;
+        padding: 0.8rem;
+
+        &--won {            
+            background-color: #eaeaea;
+        }
+
+        &--network {
+            background-color: #d8d8d8;
+        }
+
+        &--photo {
+            background-color: #eaeaea;
+            border-radius: 0%;
+        }
+    }
+
+    &--network {
+        max-width: 9rem;
+    }
+
+    &--photo {
+        max-width: none;
     }
 }
+
 
 // sessions
 .btn--watch {
     background-color: #2c2c2c;
+}
+.session-card {
+    background-color: #f5f5f5;
+    border: none;
+
+    h3 {
+        color: red;
+    }
 }

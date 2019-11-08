@@ -5,10 +5,13 @@ import { HomeComponent } from './_components/home/home.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { AllDummyComponent, CreateDummyComponent, EditDummyComponent, ShowDummyComponent } from './_components/dummy/index';
 import { DashboardComponent } from './_components/dashboard/dashboard.component';
+import { GoogleAuthComponent } from './_components/auth/googleauth/googleauth.component';
+import { PostLoginComponent } from './_components/auth/postlogin/postlogin.component';
 
 const appRoutes: Routes = [
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
+    { path: 'login', component: GoogleAuthComponent },
+   // { path: 'register', component: RegisterComponent },
+    { path: 'postlogin.html', component: PostLoginComponent },
     { path: 'forgot-password', component: ForgotPasswordComponent },
 	{ path: 'reset-password/:token', component: ResetPasswordComponent },
 	{ path: 'dashboard', component: DashboardComponent },

@@ -27,6 +27,8 @@ import { NavigationComponent } from './_components/navigation/navigation.compone
 import { HomeComponent } from './_components/home/home.component';
 import { DashboardComponent } from './_components/dashboard/dashboard.component';
 import { MemberBadgeComponent } from './_components/member-badge/member-badge.component';
+import { GoogleAuthComponent } from './_components/auth/googleauth/googleauth.component';
+import { PostLoginComponent } from './_components/auth/postlogin/postlogin.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { MemberBadgeComponent } from './_components/member-badge/member-badge.co
     NavigationComponent,
     HomeComponent,
     DashboardComponent,
-    MemberBadgeComponent
+    MemberBadgeComponent,
+    GoogleAuthComponent,
+    PostLoginComponent
   ],
   imports: [
     BrowserModule,
