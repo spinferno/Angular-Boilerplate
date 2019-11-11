@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { UserProfile } from './../../_models/sessions';
 
 @Component({
   selector: 'app-member-badge',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./member-badge.component.scss']
 })
 export class MemberBadgeComponent implements OnInit {
+
+  @Input() userProfile: UserProfile;
 
   constructor() { }
 

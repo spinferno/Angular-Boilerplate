@@ -14,8 +14,8 @@
   <!-- #endregion -->
 
   <!-- #region Identity -->
-  <div class="identity-banner px-5 pt-4 pb-5">
-    <app-member-badge></app-member-badge>
+  <div class="identity-banner px-5 pt-4 pb-5" >
+    <app-member-badge  *ngIf="!isLoading" [userProfile]="userProfile" ></app-member-badge>
   </div>
   <!-- #endregion -->
 

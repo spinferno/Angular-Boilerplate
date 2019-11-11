@@ -1,7 +1,7 @@
 <div class="badge-container">
-  <img src="./../../../assets/images/Skater01.jpg" class="badge-container__img mr-4">
+  <img [src]="this.userProfile.profilePictureUri" class="badge-container__img mr-4">
   <div class="badge-container__profile-information">
-    <h1>Johnathan Smith</h1><br>
+    <h1>{{ this.userProfile.firstName }} {{ this.userProfile.lastName }}</h1><br>
     <img src="./../../../assets/images/flag_au.jpg" class="icon-flag mr-2" alt="Flag of Australia"><h2>Melbourne, Australia</h2><h2>Age: 26</h2><br>
     <h3>Level: Novice</h3><h3>Membership: Silver</h3>
   </div>

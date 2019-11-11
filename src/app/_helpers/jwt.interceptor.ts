@@ -21,9 +21,6 @@ export class JwtInterceptor implements HttpInterceptor {
             headers: this.headers
         });
 
-        console.log(this.authenticationService.token);
-        console.log(request);
-
         // add authorization header with jwt token if available
         // let currentUser = JSON.parse(localStorage.getItem('user'));
         // if (currentUser && currentUser.token) {
@@ -34,8 +31,6 @@ export class JwtInterceptor implements HttpInterceptor {
                 }
             });
         // }
-
-        console.log(request);
 
         return next.handle(request);
     }
