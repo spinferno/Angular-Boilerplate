@@ -3,10 +3,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { environment } from '../../environments/environment';
+import { AuthObject } from './../_models/auth';
 
 @Injectable()
 export class AuthenticationService {
     public token: string;
+    public authObject: AuthObject = {};
     public headers: HttpHeaders;
     public readonly apiUrl = environment.apiUrl;
     public readonly baseUrl = environment.baseUrl;
@@ -20,7 +22,7 @@ export class AuthenticationService {
     isLoggedIn() {
         if (localStorage.getItem('user')) {
            return true;
-       }       
+       }
        return false;
     }
 
@@ -35,12 +37,30 @@ export class AuthenticationService {
                     let expiresIn = response['expires_in'];
                     if (this.token) {
                         // store expiresIn and jwt token in local storage to keep user logged in between page refreshes
-                        localStorage.setItem('user', 
+                        localStorage.setItem('user',
                             JSON.stringify({ expires_in: expiresIn, token: this.token }));
                     }
                     return response;
                 })
             );
+    }
+
+    loginViaGoogle(access_token: string, state: string) {
+        this.token = access_token;
+
+        if (this.token) {
+            // store expiresIn and jwt token in local storage to keep user logged in between page refreshes
+            localStorage.setItem('user',
+                JSON.stringify({ // expires_in: expiresIn,
+                    token: this.token
+                }));
+        }
+
+        console.log(this.token);
+    }
+
+    updateAuthObject(newAuthObject: AuthObject) {
+        this.authObject = newAuthObject;
     }
 
     register(username: string, email: string, password: string): Observable<any> {
