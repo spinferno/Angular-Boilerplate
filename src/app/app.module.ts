@@ -18,7 +18,7 @@ import { AuthGuard } from './_guards/auth.guard';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 
 // all services
-import { AuthenticationService, DummyService, FileService } from './_services/index';
+import { AuthenticationService, DummyService, FileService, SessionsService } from './_services/index';
 
 // all components
 import { AppComponent } from './_components/app.component';
@@ -29,8 +29,6 @@ import { DashboardComponent } from './_components/dashboard/dashboard.component'
 import { MemberBadgeComponent } from './_components/member-badge/member-badge.component';
 import { GoogleAuthComponent } from './_components/auth/googleauth/googleauth.component';
 import { PostLoginComponent } from './_components/auth/postlogin/postlogin.component';
-
-
 @NgModule({
   declarations: [
     AppComponent,
