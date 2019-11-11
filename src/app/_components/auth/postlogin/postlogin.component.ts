@@ -25,7 +25,11 @@ export class PostLoginComponent implements OnInit {
     this.currentAuthObject = this.parseURIparameters(this.router.url);
     this.authService.updateAuthObject(this.currentAuthObject);
     this.authService.loginViaGoogle(this.currentAuthObject.access_token.toString(), this.currentAuthObject.state.toString());
-  }
+    
+    if(this.authService.token.length > 200) {
+      this.router.navigate(['/dashboard']);
+    };
+  };
 
   private parseURIparameters(href: string): AuthObject {
     let tokenAsJson = null;
